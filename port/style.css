@@ -1,0 +1,308 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+    box-sizing: border-box;
+ }
+ html{
+  scroll-behavior: smooth;
+ }
+ body{
+   background:#000000;
+   color: rgb(0, 0, 0);
+ }
+ #header{
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  height: 100vh;
+  font-size: 100%;
+  /* background-image: url(iMages/images.jpg); */
+  /* background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% ); */
+  /* background-image: linear-gradient(to right, #33001b, #ff0084); */
+  background-image: linear-gradient(to right, #ff6e7f, #bfe9ff);
+  background-size: cover;
+  background-position: center;
+ }
+ .container{
+  padding: 10px 10%;
+ }
+ 
+nav{
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ }
+ .logo{
+  width: 340px;
+  position: relative;
+ }
+ nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+  font-size: 50px;
+ }
+ nav ul li a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 35px;
+  position: relative;
+ }
+ nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: yellow;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+ }
+ nav ul li a:hover::after{
+  width: 100%;
+ }
+ .header-text{
+  margin-top: 20%;
+  font-size: 30px;
+ }
+ .header-text{
+  font-size: 60px;
+  margin-top: 20px ;
+  /* padding-left: -100px; */
+  padding-top: 200px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  margin-left: 0px;
+ }
+ .header-text h1 span{
+  color: rgb(34, 112, 202);
+ } 
+
+ /* ----------ABOUT-------------- */
+ 
+ #about{
+  /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+  /* background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% ); */
+  /* background-image: linear-gradient(to right, #33001b, #ff0084); */
+  /* background-image: linear-gradient(to right, #141e30, #243b55); */
+  background-image: linear-gradient(to right, #ff6e7f, #bfe9ff);
+  padding: 80px 0;
+  width: 100%;
+  height: 100vh;
+  color:rgb(255, 255, 255);
+ }
+ .row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ }
+ .about-col-1{
+  flex-basis: 35%;
+ }
+ .about-col-1 img{
+  width: 99%;
+  height: 100%;
+  border-radius: 800px;
+ }
+ .about-col-2{
+  flex-basis: 60%;
+ }
+ .sub-title{
+  font-size: 100px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+ }
+ .tab-titles{
+  display: flex;
+  margin: 20px 0 40px;
+ }
+ .tab-links{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position:relative;
+ }
+ .tab-links::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: rgb(80, 48, 156);
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+ }
+ .tab-links.active-link::after{
+  width: 50%;
+ }
+ .tab-contents ul li{
+  list-style: none;
+  margin: 10px 0;
+ }
+.tab-contents ul li span{
+  color: rgb(4, 0, 255);
+  font-size: 14px;
+}
+.tab-contents{
+  display: none;
+}
+.tab-contents.active-tab{
+  display: block;
+}
+/* -------------SKILLS-------------- */
+/* #skills{
+  padding: 30px 0;
+}
+.skillslist{
+  display:;
+} */
+/* ------------CONTACT------------ */
+
+#contact{
+  /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+  /* background-image: linear-gradient(to right, #8360c3, #2ebf91); */
+  /* background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% ); */
+  background-image: linear-gradient(to right, #ff6e7f, #bfe9ff);
+  padding-top: 400px;
+}
+.sub-title1{
+  font-size: 110px;
+  font-weight: 600;
+  color: white;
+}
+.contactright{
+  flex-basis: 60%;
+  width: 100%;
+  max-width: 1400px;
+  padding:50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.textb{
+  width: 40%;
+  height: 50px;
+  padding: 12px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+.textb1{
+  width: 59% ;
+  height: 50px;
+  padding: 12px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+textarea{
+  width: 100%;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  padding: 12px;
+  background-color: #ffffff;
+  border: none;
+  font-size: 18px;
+
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+.btn{
+  width: 120px;
+  height: 40px;
+  margin-left: auto;
+  background-color: #3494db;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid #3494db;
+  transition: .3 linear;
+}
+.btn:hover{
+  background-color: transparent;
+  color: #3494db;
+}
+.contactleft p{
+  font-size: 25px;
+  color: rgb(255, 208, 0);
+  margin-top: 30px;
+}
+.contactleft p i{
+  color: rgb(245, 216, 178);
+  margin-right: 15px;
+  font-size: 40px;
+}
+
+.socialIcons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 30px 15px 30px 0;
+}
+.socialIcons a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width:40px;
+  height: 40px; 
+  border: 2px solid rgb(255, 255, 255);
+  font-size: 30px;
+  border-radius: 20%;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 10px; 
+} 
+.link a i{
+  color: blue;
+}
+.git a i{
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+}
+.twit a i{
+  color: rgb(99, 174, 199);
+}
+.insta a i{
+  color: rgb(255, 255, 255);
+}
+.yt a i{
+  color: red;
+}
+.link:hover{
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 15px blue;
+  border-radius: 20%;
+}
+.git:hover{
+  background-color: rgb(255, 255, 255);
+  border-radius: 20%;
+  box-shadow: 0 0 40px rgb(0, 0, 0);
+}
+.twit:hover{
+  background-color: rgb(255, 255, 255);
+  border-radius: 20%;
+  box-shadow: 0 0 40px rgb(99, 174, 199);
+}
+.insta:hover{
+  background-color: rgb(214, 20, 94);
+  border-radius: 20%;
+  box-shadow: 0 0 15px rgb(255, 255, 255);
+}
+.yt:hover{
+  background-color: rgb(255, 255, 255);
+  border-radius: 20%;
+  box-shadow: 0 0 15px red;
+}
+

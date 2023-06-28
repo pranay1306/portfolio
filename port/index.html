@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+
+<body>
+    <div id="header">
+        <div class="container">
+            
+            <nav>
+                <!-- <img src="iMages/75ca99f1ea814f959128aaba1039cb87.png" class="logo">
+                 -->
+                 <a href="#" style="font-family: 'Audiowide', cursive; font-size: 50px; text-decoration: none; color: aquamarine;">PRANAY</a>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="Pranay_s_Resume.pdf" target="_blank">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text" style="margin-left: 0px;">
+                <p>Web Developer</p>
+                <h1>Hey, I'm <span>K P <br>Pranay</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------ABOUT------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="iMages/thumb-1920-545909 (2).jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title" style="color: rgb(94, 29, 134);">About Me</h1>
+                    <p style="font-size: 30px;">
+                        I am currently pursuing my Bachelor of Technology degree in Computer Science Engineering with
+                        specialization in Artificial
+                        Intelligence and Machine Learning. I am interested in competitive
+                        coding and web
+                        development. I have knowledge of popular web technologies such as HTML, CSS, JavaScript.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('softskills')">Soft Skills</p>
+                        <p class="tab-links active-tab" onclick=" opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="softskills">
+                        <ul>
+                            <li><br>Problem-Solving</li>
+                            <li><br>Teamwork</li>
+                            <li><br>Communication</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Building Apps</li>
+                            <li><span>2019 - 2021</span><br>Designing Web Interfaces</li>
+                            <li><span>2017 - 2019</span><br>Web Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>CMR ENGINEERING COLLEGE</li>
+                            <li><span>2021</span><br>FIITJEE JUNIOR COLLEGE SAIFABAD</li>
+                            <li><span>2019</span><br>ARMY PUBLIC SCHOOL R K PURAM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------Skills------------------ -->
+    <!-- <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <a href="file:///C:/Users/prana/Downloads/Pranay_s_Resume.pdf"></a>
+
+        </div>
+    </div> -->
+
+    <!-- ---------------CONTACT---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contactleft">
+                    <h1 class="sub-title1" style="color: rgba(255, 230, 0, 0.677);">Contact Me</h1>
+                    <p><i class="fa brands fa-envelope"></i> pranaykannan1306@gmail.com</p>
+                    <p><i class="fa brands fa-phone-square-alt"></i> +91 9618<b>-</b>939<b>-</b>484</p>
+                    <div class="socialIcons">
+                        <div class="link">
+                            <a href="https://www.linkedin.com/in/pranay-kannan-59262526a/"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <div class="git">
+                            <a href="https://github.com/pranay1306"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <div class="twit">
+                            <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <div class="insta">
+                            <a href="https://www.instagram.com/_pranay._.kannan_/"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <div class="yt">
+                            <a href="https://www.youtube.com/channel/UCQxjKfJ5_utx07IriT1I5ew"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactright">
+                    <form action="" class="contactform">
+                        <input type="text" class="textb" placeholder="Your Name">
+                        <input type="email" class="textb1" placeholder="Your Email">
+                        <textarea placeholder="Your Message"></textarea>
+                        <input type="submit" class="btn" value='Send'>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+
+</html>
